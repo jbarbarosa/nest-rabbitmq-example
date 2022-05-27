@@ -4,15 +4,15 @@ services:
     ports: 
       - "3001:3000"
     volumes:
-      - ./producer/:/usr/app/
+      - ./producer/:/usr/app
   bitcoin-consumer:
     build: ./bitcoin-consumer/.
     volumes:
-      - ./bitcoin-consumer/:/usr/app/
+      - ./bitcoin-consumer/:/usr/app
   credit-consumer:
     build: ./credit-consumer/.
     volumes:
-      - ./credit-consumer/:/usr/app/
+      - ./credit-consumer/:/usr/app
     deploy:
       replicas: 2
   rabbitmq:
