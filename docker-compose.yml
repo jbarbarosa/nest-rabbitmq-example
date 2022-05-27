@@ -15,4 +15,7 @@ services:
       - ./credit-consumer/:/usr/app/
     deploy:
       replicas: 2
-
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
