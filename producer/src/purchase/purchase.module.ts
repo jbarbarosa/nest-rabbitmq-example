@@ -2,8 +2,8 @@ import { RabbitMQModule } from "@golevelup/nestjs-rabbitmq";
 import { Module } from "@nestjs/common";
 import { UserModule } from "src/user/user.module";
 import { CreatePurchaseController } from "./controller/create-purchase.controller";
-import { ValidatePurchaseService } from "./service/create-purchase.service";
 import { RoutingKeyService } from "./service/routing-key.service";
+import { ValidatePurchaseService } from "./service/validate-purchase.service";
 
 @Module({
   controllers: [CreatePurchaseController],

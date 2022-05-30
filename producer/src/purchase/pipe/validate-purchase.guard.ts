@@ -1,6 +1,6 @@
 import { ArgumentMetadata, HttpException, Injectable, PipeTransform } from "@nestjs/common";
 import { CreatePurchaseDto } from "../dto/create-purchase.dto";
-import { ValidatePurchaseService } from "../service/create-purchase.service";
+import { ValidatePurchaseService } from "../service/validate-purchase.service";
 
 @Injectable()
 export class ValidatePurchasePipe implements PipeTransform<any> {
