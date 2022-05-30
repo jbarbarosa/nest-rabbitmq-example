@@ -8,5 +8,6 @@ Simple model for distributing messages across multiple consumers, using @Golevel
 3) Enter into the local RabbitMQ instance admin dashboard (localhost:15672, user: guest, password: guest)
 4) Inside "Exchanges", verify if the "payments" exchange is in the list
 5) Inside "payments", verify if the queues "bitcoin-payments" and "credit-payments" are bound to that exchange
-6) Take a look at the DTO inside producer/src/purchase/dto, and POST a JSON following that model on localhost:3001
+6a) Take a look at the DTO inside producer/src/user/dto, and POST a JSON following that model on localhost:3001, creating a User
+6b) Take a look at the DTO inside producer/src/purchase/dto, and POST a JSON following that model on localhost:3001, with that User's ID
 7) See the messages getting routed to their respective consumers
